@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<title>todolist</title>
+<style>
+    #content{
+        padding: 10px;
+        height: 45px;
+        width: 400px;
+        resize: none;
+    }
+    .form-control button{
+        margin: 30px;
+        height: 45px;
+        line-height: 45px;
+        border: none;
+        background: #ccc;
+        text-align: center;
+        width: 80px;
+    }
+    #list {
+        width: 600px;
+    }
+    #list ul {
+        list-style-type: none;
+    }
+    #list ul li {
+        display: flex;
+        background: gray;
+        border-radius: 5px;
+    }
+    #list ul li div {
+        width: 70%;
+    }
+
+    #list ul li a{
+      text-decoration: none;
+      display: block;
+      padding-right: 5px;
+      padding-left: 5px;
+    }
+    .delete{
+        color: black;
+        background: red;
+        border-radius: 5px;
+    }
+
+</style>
+</head>
+
+<body>
+
+    <div class="form-control">
+        <textarea class="content" id="content" placeholder="Nhập todo"></textarea>
+        <button>ADD</button>
+    </div>
+
+    <div id="list">
+        <h4>Danh sách todo</h4>
+        <!-- <ul>
+            <li>
+                <div class="todo-name">learn english</div>
+                <a class="delete" href="#">delete</a>
+                <a  href="#">update</a>
+            </li>
+        </ul> -->
+        <div id="result">
+            <p>Chưa có todo</p>
+        </div>
+    </div>
+
+    <script src="./mainjs.js"></script>
+</body>
+</html>
